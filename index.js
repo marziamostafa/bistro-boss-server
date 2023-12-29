@@ -37,7 +37,7 @@ async function run() {
         })
 
         app.get('/reviews', async (req, res) => {
-            const result = await menuCollection.find().toArray();
+            const result = await reviewCollection.find().toArray();
             res.send(result)
         })
 
